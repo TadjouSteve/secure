@@ -4,7 +4,9 @@ pipeline {
     tools {
         // Indique à Jenkins d'utiliser le JDK installé
         // Assurez-vous d'avoir configuré le JDK dans "Manage Jenkins" -> "Global Tool Configuration"
-        jdk 'JDK_17' 
+        jdk 'JDK_17'
+        maven 'M3_HOME' 
+         
     }
 
     stages {
