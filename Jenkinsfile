@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo 'Stopping previous instance...'
                 // Tente d'arrêter l'instance précédente pour éviter les erreurs de port
-                sh 'pkill -f secure || true'
+                //sh 'pkill -f secure || true'
 
                 echo 'Starting the Spring Boot application...'
                 // Lance le fichier .jar en tâche de fond
