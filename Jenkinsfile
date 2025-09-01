@@ -18,6 +18,7 @@ pipeline {
                 sh 'mvn clean package -DskipTests'
                 // Si vous utilisez Gradle
                 // sh './gradlew build'
+                echo 'la compilation du projet est terminer avec succer'
             }
         }
 
@@ -25,7 +26,7 @@ pipeline {
             steps {
                 echo 'Stopping previous instance...'
                 // Tente d'arrêter l'instance précédente pour éviter les erreurs de port
-                sh 'pkill -f streengeAPI'
+                sh 'pkill -f secure'
 
                 echo 'Starting the Spring Boot application...'
                 // Lance le fichier .jar en tâche de fond
